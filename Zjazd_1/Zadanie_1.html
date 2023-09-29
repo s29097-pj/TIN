@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 1</title>
+</head>
+
+<body>
+    <ul>
+        <!-- lista nieuporządkowana -->
+        <li>link
+            <ul>
+                <li>link2</li>
+                <li>link2</li>
+                <li>link2</li>
+            </ul>
+        </li>
+        <li>link2</li>
+        <li>link3</li>
+    </ul>
+    <ol>
+        <!-- lista uporządkowana -->
+        <li>link</li>
+        <li>link2</li>
+        <li>link3</li>
+    </ol>
+    <hr> <!-- linia pozioma -->
+    <h1>Title1</h1> <!-- Nagłówki od h1 do h6 -->
+    <h2>Title1</h2>
+    <h3>Title1</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, laboriosam nemo vitae obcaecati itaque atque,
+        maiores nam quo quasi reiciendis eveniet ipsum qui dignissimos laudantium aperiam. Explicabo cumque aperiam
+        laudantium.</p>
+    <hr>
+    <img src="grafika/grafika1.jpg" alt="Zdjęcie Daru Pomorza">
+    <hr>
+    <h2>title 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat totam minus ratione sunt animi earum
+        assumenda porro repellendus natus. Fugit nesciunt deserunt vel assumenda consectetur aperiam veritatis illum
+        voluptatibus?
+        Esse assumenda, cupiditate eius placeat dolorum quos voluptatibus distinctio reprehenderit in accusantium magni
+        minima nostrum quisquam omnis alias, officia obcaecati molestias maxime hic non ea eligendi vel. Enim,
+        necessitatibus libero.
+        Quod, quisquam deleniti pariatur id unde beatae accusantium repellendus saepe esse ipsa quis, possimus
+        distinctio nesciunt natus nostrum, fugit reiciendis molestias odit velit? Ad libero saepe officia, porro
+        accusantium deleniti.
+    </p>
+    <h2>Subtitle</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ullam voluptate reiciendis? Doloremque
+        cupiditate, esse praesentium quam quia nam voluptas, id blanditiis, rem iusto repudiandae deleniti placeat!
+        Obcaecati, sit itaque.
+        Perferendis quia dignissimos, corporis odit amet beatae officiis mollitia eaque saepe sunt obcaecati iure
+        temporibus odio! Nostrum, dolores repellat? Perferendis ex ullam consequatur illo pariatur aspernatur aliquam
+        dolorum minima quos.</p>
+    <hr>
+    <h3>Subtitle 3</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur officia repudiandae perferendis, sit enim
+        saepe ea quis nisi cum voluptatem doloremque recusandae ducimus aut eius amet necessitatibus ipsam fugiat vitae!
+        Velit officiis obcaecati suscipit. Repudiandae minus blanditiis delectus quod commodi quisquam, odio
+        necessitatibus sunt harum fuga soluta illum error fugiat quae quia qui cumque cum molestias ad adipisci?
+        Laudantium, cum.
+    </p>
+    <hr>
+    <form method="POST" action="index.html">
+        <!--GET-->
+        <fieldset>
+            <div>
+                <!-- Podstawowe pole tekstowe -->
+                <label for="imie">imię</label>
+                <input type="text" name="imie" id="imie">
+            </div>
+            <br>
+            <div>
+                <!-- Pole komentarza (o powiększonych rozmiarach) -->
+                <label for="opis">opis</label>
+                <textarea name="opis" id="opis">Wpisz coś</textarea>
+            </div>
+            <br>
+            <div>
+                <label for="wiek">wiek</label>
+                <select>
+                    <option>0-18</option>
+                    <option>19-65</option>
+                    <option>powyżej 66</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <!-- Lista rozwijalna (typ rozszerzony) z zaznaczoną opcją domyślną -->
+                <label for="zaznaczenie">zaznaczenie</label>
+                <select name="zaznaczenie" multiple size="3">
+                    <option selected>Opcja 1</option>
+                    <option>Opcja 2</option>
+                    <option>Opcja 3</option>
+                    <option>Opcja 4</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <!-- Pole typu RADIO -->
+                <label for="opcja">opcje</label>
+                <input type="radio" name="opcja" id="opcja1">opcja 1
+                <input type="radio" name="opcja" id="opcja2">opcja 2
+                <input type="radio" name="opcja" id="opcja3">opcja 3
+            </div>
+            <br>
+            <div>
+                <!-- Pole typu CHECKBOX -->
+                <label for="jezyk">język</label>
+                <input type="checkbox" name="ch1" id="ch1">zaznacz 1
+                <input type="checkbox" name="ch2" id="ch2">zaznacz 2
+                <input type="checkbox" name="ch2" id="ch2">zaznacz 3
+            </div>
+            <br>
+            <!-- Przyciski -->
+            <input type="submit" name="wyslij" id="wyslij" value="WYŚLIJ">
+            <input type="reset" name="wyczysc" id="wyczysc" value="WYCZYŚĆ">
+        </fieldset>
+    </form>
+    <hr>
+    <table border="1">
+        <!--colspan rowspan łączy odpowiednio komórki i wiersze -->
+        <tr>
+            <th>1</td>
+            <th>2</td>
+            <th>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td colspan="2">5</td>
+        </tr>
+    </table>
+    <hr>
+    <a href="https://gdansk.pja.edu.pl/pl/" target="_blank">PJATK Gdańsk</a>
+</body>
+
+</html>
