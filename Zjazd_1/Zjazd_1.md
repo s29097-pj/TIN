@@ -8,10 +8,10 @@
 <https://ekonom-kolobrzeg.home.pl/autoinstalator/wyklad/zadanie/zadanie.pdf>
 
 ## Przydatne linki
-<https://w3schools.com> - kursy i ćwiczenia
-<https://validator.w3.org> - walidacja kodu
-<https://stackoverflow.com> - serwis spłecznościowy dla programistów
+<https://w3schools.com> - kursy i ćwiczenia 
+<https://validator.w3.org> - walidacja kodu 
+<https://stackoverflow.com> - serwis spłecznościowy dla programistów 
 
 ## Rady
-`<!-- To jest komentarz -->`
+`<!-- To jest komentarz -->` 
 `!` + `Enter` wkleja podstawową strukturę kodu HTML w Visual Studio Code
