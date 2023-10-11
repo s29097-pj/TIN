@@ -1,7 +1,7 @@
 # TIN
 ## Technologie Internetu
 
-## Prowadzący: 
+### Prowadzący: 
 - Paweł Pisarski
 - e-mail: ppisarski@pjwstk.edu.pl
 - www (+wykłady): <http://users.pja.edu.pl/~ppisarski/>
