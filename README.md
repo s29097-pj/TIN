@@ -8,12 +8,12 @@
 - zadania: Platforma Gakko
 
 ### Zaliczenie:
-- **aktywność na zajęciach**, około 50%
-Rozwiązywanie zadań na zajęciach
-- **projekt semestralny**, około 50%
-Rozmowa o projekcie: czwarty zjazd
-Wybór tematu projektu: piąty zjazd
-Zaliczenie projektu: do końca siódmego zjazdu
+- **aktywność na zajęciach**, około 50% \
+Rozwiązywanie zadań na zajęciach \
+- **projekt semestralny**, około 50% \
+Rozmowa o projekcie: czwarty zjazd \
+Wybór tematu projektu: piąty zjazd \
+Zaliczenie projektu: do końca siódmego zjazdu \
 **Projekt musi:**
 - być napisany indywidualnie na niepowtarzalny temat
 - zawierać elementy JavaScript
