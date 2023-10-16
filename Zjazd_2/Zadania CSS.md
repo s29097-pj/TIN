@@ -1,8 +1,8 @@
-##Technologie Internetu
+## Technologie Internetu
 
-###zadania CSS
+### zadania CSS
 
-####Zadanie 2
+#### Zadanie 2
 Kod HTML z pierwszych zajęć otrzymał style CSS. Wygląda teraz jak na załączonych zrzutach ekranu (pliki 22a.jpg, 22b.jpg).
 Stwórz style CSS by Twoja strona wyglądała podobnie. Nie musi być identycznie, ale:
 - Prawa kolumna strony jest scrollowana (zrzuty ekranu przedstawiają górę i dół treści)
@@ -17,7 +17,7 @@ Stwórz style CSS by Twoja strona wyglądała podobnie. Nie musi być identyczni
 - Co drugi wiersz tabelki ma inny kolor
 - Stopka ma wyśrodkowany tekst
 
-####Zadanie 3
+#### Zadanie 3
 Strona www z poprzednich zadań otrzymała nowe style, zgodnie z rysunkiem 3a.jpg.
 Stwórz style CSS by Twoja strona wyglądała podobnie. Tym razem ważne elementy to:
 - Rozwijane menu: po najechaniu pojawia się lista zakładek należących do danego elementu listy
