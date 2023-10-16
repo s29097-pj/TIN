@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 10;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background-color: bisque;
+    color: black;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.sticky {
+    position: sticky !important;
+}
+
+.logo {
+    width: 500px;
+    font-size: 48px;
+    /*border: 2px solid white;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav {
+    width: 100%;
+    padding: 10px 0;
+    background-color: red;
+    text-align: center;
+    border-top: 1px solid brown;
+    border-bottom: 1px solid brown;
+    height: 40px;
+    position: sticky;
+}
+
+.content {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    padding-top: 10px;
+}
+
+.socials {
+    width: 100%;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.socialdivs {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pjatk {
+    width: 250px;
+    height: 155px;
+    float: left;
+}
+
+.pjatk:hover {
+    background-color: blueviolet;
+}
+
+.github {
+    width: 250px;
+    height: 155px;
+    float: left;
+}
+
+.github:hover {
+    background-color: blueviolet;
+}
+
+.google {
+    width: 250px;
+    height: 155px;
+    float: left;
+}
+
+.google:hover {
+    background-color: blueviolet;
+}
+
+.szuflandia {
+    width: 250px;
+    height: 155px;
+    float: left;
+}
+
+.szuflandia:hover {
+    background-color: blueviolet;
+}
+
+.footer {
+    text-align: center;
+    background-color: yellowgreen;
+    padding: 30px;
+}
+
+
+/**/
+ul {
+    list-style: none;
+    background-color: aqua;
+}
+ul li {
+    display: inline-block;
+    position: relative;
+}
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: blue;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+ul li ul.dropdown li {
+    display: block;
+}
+ul li ul.dropdown {
+    width: 100%;
+    background: cornsilk;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li a:hover {
+    background-color: aquamarine;
+}
+ul li:hover ul.dropdown {
+    display: block;
+}
+
