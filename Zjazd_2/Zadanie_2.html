@@ -13,7 +13,7 @@
     <div class="wrapper"></div>
     <div class="header">
         <div class="logo">
-            <img src="grafika/tin_1.jpg" style="float: left;" width="110" height="110" />
+            <img src="grafika/tin_1.png" style="float: left;" width="110" height="110" />
             <span style="color: red;">Technologie </span> Internetowe
             <div style="clear: both;"></div>
         </div>
@@ -39,40 +39,55 @@
 
         <section>
             <content class="content_main" id="content_main">
+                <!-- Treść Lorem ipsum jest przewijalna -->
+                <div id="scrollable-section" class="scrollable-section">
                 <h1>Title 1</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                <p class="scrollable-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam odit non consequuntur harum blanditiis sint, nihil eos error inventore reprehenderit rerum voluptatem odio tempore corrupti. Odit est tempora culpa cumque.</p>
+                <br>
                 <h3>Subtitle</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit...</p>
+                <p class="scrollable-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, at. Alias sint ad facilis, eos suscipit deleniti cum ab soluta iure, quibusdam nam placeat quod ducimus. A deserunt nulla corporis.
+                Natus aperiam eligendi praesentium earum hic quisquam! Cupiditate culpa accusamus, amet sint dolor odit ipsa iste a provident voluptates nemo adipisci in! Quibusdam maxime, possimus reiciendis totam aliquid accusamus id?</p>
                 <hr>
                 <div><img src="grafika/baner_1.jpg" alt="baner_1"></div>
                 <br>
                 <hr>
-                <h2>title 2</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                <h2>Content</h2>
+                <p class="scrollable-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque odio saepe ad provident est, delectus laudantium aut, sequi ut iure quos animi distinctio. Eveniet explicabo saepe facilis sequi ad adipisci.
+                Quo corrupti placeat cupiditate omnis reprehenderit, sunt earum veniam iure vero, beatae sit? Maiores illum numquam quo, laboriosam voluptatem, quaerat earum molestias sed sunt veniam eaque, ipsum ad pariatur tempore.
+                Ex ducimus autem voluptatem libero necessitatibus dolores nulla, accusamus consequatur rerum consectetur vel laudantium error, consequuntur sapiente minima aut quis itaque repudiandae illo ipsam adipisci! Corporis praesentium consectetur doloribus dolor.
+                Eius, ipsum. Optio nam qui blanditiis harum dolorum maiores eos debitis odio praesentium ex unde, nesciunt iusto vitae facere ipsam eveniet neque magnam. Nulla consectetur ex nihil harum reiciendis eaque.
+                Error voluptatum commodi reiciendis officiis, neque unde quam minima molestias eius dolor maiores hic veritatis adipisci quidem illum? Quod aperiam hic debitis eum perspiciatis ex sed eius ad nihil nobis!
+                Hic cupiditate non assumenda consequatur voluptates illum inventore nostrum, facilis quae ipsum maxime dolore amet quas quibusdam quos eaque voluptatibus est! Voluptatibus amet maiores placeat adipisci dignissimos sapiente sint aliquam.
+                Deserunt veritatis ab tempora ipsum aut, dolorem numquam molestiae consectetur mollitia? Labore fugit blanditiis debitis architecto ut est velit praesentium, eius quasi saepe reiciendis nostrum vero necessitatibus incidunt repellendus. Reiciendis!
+                Quae repellendus asperiores voluptatibus culpa tenetur ipsa error ea deleniti, dicta, nobis iste, est recusandae dolore animi accusantium nam dolorum consequuntur ut? Aliquam earum consequatur fuga dicta voluptas, neque non!
+                Odit, cumque minus. A illum sapiente saepe nostrum nulla optio vel facilis quaerat. Expedita ipsam exercitationem, nulla culpa, facere ullam error deleniti quae excepturi consequatur, iste tempora praesentium esse non?
+                Provident reiciendis amet dicta quis reprehenderit ratione, cupiditate debitis, cum voluptas fugiat alias ipsam quidem sunt aperiam hic fugit adipisci praesentium laudantium. Optio tempore odio praesentium eligendi culpa dolore maiores!</p>
                 <br>
                 <h2>Subtitle</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                <p class="scrollable-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta aliquid voluptatum vitae ipsum reprehenderit, excepturi esse ut necessitatibus adipisci eum veritatis, accusantium iusto numquam suscipit, quisquam quibusdam magni consequatur sunt!
+                Nobis nulla consequatur iste explicabo laborum vel magnam. Sequi itaque aliquid commodi sit, aut possimus recusandae ratione asperiores totam iure labore maiores tenetur? Non ab illo omnis sit repellat quod?</p>
                 <br>
                 <h3>Subtitle 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p>
+                <p class="scrollable-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo veniam, dolores quae, totam eius repudiandae doloribus tempore qui voluptatibus, facilis hic temporibus ad corporis sit. Non ex consequatur similique.</p>
+                </div>
                 <br>
                 <hr>
                 
-                
+                <label for="form">Form</label>
                 <form method="POST" action="index.html">
                     <div class="form-column">
                         <!-- Pierwsza kolumna formularza -->
                         <div>
-                            <label for="imie">Wpisz imię</label>
-                            <input type="text" name="imie" id="imie">
-                        </div>
+                            <label for="imie">Wpisz imię: </label>
+                            <input type="text" name="imie" id="imie" placeholder="Wpisz swoje imię">
+                        </div>                  
                         <div class="data" id="data">
                             <label for="data_urodzenia">Data urodzenia: </label>
                             <input type="date" name="data_urodzenia" id="data_urodzenia">
                         </div>
                         <div>
-                            <label for="opis">opis</label>
-                            <textarea name="opis" id="opis">Wpisz coś</textarea>
+                            <label for="opis1">opis</label>
+                            <textarea name="opis" id="opis1" class="custom-textarea" placeholder="Wpisz coś..."></textarea>
                         </div>
                     </div>
                     <div class="form-column">
@@ -117,13 +132,15 @@
                 <hr>
                 <br>
 
+                <label for="table">Table</label>
                 <table border="1">
                  
                     <tr>
-                        <th>col1</th> 
-                        <th>col2</th> 
-                        <th>col3</th> 
+                        <th class="table-header">Nagłówek 1</th>
+                        <th class="table-header">Nagłówek 2</th>
+                        <th class="table-header">Nagłówek 3</th>
                     </tr>
+
                     <tr>
                         <td>11</td> 
                         <td>12</td> 
