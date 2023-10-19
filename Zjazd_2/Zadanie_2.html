@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Grafika tytułowa i logo -->
+    <div class="wrapper"></div>
+    <div class="header">
+        <div class="logo">
+            <img src="grafika/tin_1.jpg" style="float: left;" width="110" height="110" />
+            <span style="color: red;">Technologie </span> Internetowe
+            <div style="clear: both;"></div>
+        </div>
+        <br>
+        
+        <section>
+            <sidebar class="sidebar" id="sidebar">
+                <ul class="nav1" id="nav1">
+                    <li>
+                        <a href="#">link 1</a>
+                        <ul class="sub-links">
+                            <li><a href="#">link 1.1</a></li>
+                            <li><a href="#">link 1.2</a></li>
+                            <li><a href="#">link 1.3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">link 2</a></li>
+                    <li><a href="#">link 3</a></li>
+                </ul>
+            </sidebar>
+        </section>
+        <br>
+
+        <section>
+            <content class="content_main" id="content_main">
+                <h1>Title 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                <h3>Subtitle</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit...</p>
+                <hr>
+                <div><img src="grafika/baner_1.jpg" alt="baner_1"></div>
+                <br>
+                <hr>
+                <h2>title 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                <br>
+                <h2>Subtitle</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                <br>
+                <h3>Subtitle 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p>
+                <br>
+                <hr>
+                
+                
+                <form method="POST" action="index.html">
+                    <div class="form-column">
+                        <!-- Pierwsza kolumna formularza -->
+                        <div>
+                            <label for="imie">Wpisz imię</label>
+                            <input type="text" name="imie" id="imie">
+                        </div>
+                        <div class="data" id="data">
+                            <label for="data_urodzenia">Data urodzenia: </label>
+                            <input type="date" name="data_urodzenia" id="data_urodzenia">
+                        </div>
+                        <div>
+                            <label for="opis">opis</label>
+                            <textarea name="opis" id="opis">Wpisz coś</textarea>
+                        </div>
+                    </div>
+                    <div class="form-column">
+                        <!-- Druga kolumna formularza -->
+                        <div>
+                            <label for="wiek">wiek</label>
+                            <select name="wiek" id="wiek">
+                                <option>0-18</option>
+                                <option>19-65</option>
+                                <option>powyżej 66</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="zaznaczenie">zaznaczenie</label>
+                            <select name="zaznaczenie" multiple size="3">
+                                <option selected>Opcja 1</option>
+                                <option>Opcja 2</option>
+                                <option>Opcja 3</option>
+                                <option>Opcja 4</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="opcja">opcje</label>
+                            <input type="radio" name="opcja" id="opcja1">opcja 1
+                            <input type="radio" name="opcja" id="opcja2">opcja 2
+                            <input type="radio" name="opcja" id="opcja3">opcja 3
+                        </div>
+                        <div>
+                            <label for="jezyk">język</label>
+                            <input type="checkbox" name="ch1" id="ch1">zaznacz 1
+                            <input type="checkbox" name="ch2" id="ch2">zaznacz 2
+                            <input type="checkbox" name="ch3" id="ch3">zaznacz 3
+                        </div>
+                    </div>
+
+                    <div class="form-buttons">
+                        <input type="submit" name="wyslij" id="wyslij" value="WYŚLIJ">
+                        <input type="reset" name="wyczysc" id="wyczysc" value="WYCZYŚĆ">
+                    </div>
+                </form>
+                
+                <hr>
+                <br>
+
+                <table border="1">
+                 
+                    <tr>
+                        <th>col1</th> 
+                        <th>col2</th> 
+                        <th>col3</th> 
+                    </tr>
+                    <tr>
+                        <td>11</td> 
+                        <td>12</td> 
+                        <td>13</td> 
+                    </tr> 
+                    <tr>
+                        <td>11</td> 
+                        <td>12</td> 
+                        <td>13</td> 
+                    </tr> 
+                    <tr>
+                        <td>11</td> 
+                        <td>12</td> 
+                        <td>13</td> 
+                    </tr> 
+                    <tr>
+                        <td>11</td> 
+                        <td>12</td> 
+                        <td>13</td> 
+                    </tr> 
+                    <tr>
+                        <td>11</td> 
+                        <td colspan="2">5</td>
+                    </tr> 
+                    <tr>
+                        <td>11</td> 
+                        <td>12</td> 
+                        <td>13</td> 
+                    </tr>  
+                 </table>
+            </content>
+        </section>
+    
+        <section>
+            <footer class="footer" id="footer">
+                <ul>
+                    <li><a href="https://gdansk.pja.edu.pl/pl/" target="_blank">PJATK Gdańsk</a></li>
+                    <li><a href="http://szuflandia.pjwstk.edu.pl/~s29097/strona.html" target="_blank">Strona domowa</a></li>
+                    <li>2023 &copy; s29097</li>
+                </ul>
+            </footer>
+        </section>
+
+    </div>
+</body>
+
+</html>
