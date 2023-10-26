@@ -16,7 +16,7 @@ Stwórz style CSS by Twoja strona wyglądała podobnie. Nie musi być identyczni
 - Co drugi wiersz tabelki ma inny kolor;
 - Stopka ma wyśrodkowany tekst.
 
-### Zadanie 3
+#### Zadanie 3
 Strona www z poprzednich zadań otrzymała nowe style, zgodnie z rysunkiem `3a.jpg`.
 Stwórz style CSS by Twoja strona wyglądała podobnie. Tym razem ważne elementy to:
 - Rozwijane menu: po najechaniu pojawia się lista zakładek należących do danego elementu listy;
