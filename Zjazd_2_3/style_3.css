@@ -133,11 +133,8 @@ img {
 }
 
 @media (max-width: 500px) {
-    .box_1, .box_2 {
-        width: 100%;
-        display: block;
-        float: none;
-        margin: 20px; /* Dodane - marginesy od góry i od dołu na małych ekranach */
+    .base_1 {
+        flex-direction: column; /* responsywność box_1 i box_2 w base_1 */
     }
 }
 
