@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technologie Internetu</title>
+    <title>TIN Zjazd 4-5</title>
     <script defer src="Zjazd_4_5.js"></script>
 </head>
 
 <body>
 
-    <h1>Zagadnienia JavaScript</h1>
+    <h1>Technologie Internetu</h1>
+    <h2>Zadania JavaScript</h2>
+    <br>
 
     <h2>Część A</h2>
+    <br>
 
     <ul>
         <li>
@@ -29,22 +32,20 @@
             <pre><strong><code>Zad_01(a, b, c)</code></strong></pre>
 
             <p>
-                Gdzie:
+                <ol> Upewnij się, że wartości a, b i c są zdefiniowane przed wywołaniem funkcji. Na przykład, jeśli
+                    chcesz sprawdzić liczby 1, 100, 3 to wpisz:</ol>
+                <pre><strong><code>Zad_01(1, 100, 3)</code></strong></pre>
             </p>
-
-            <ul>
-                <li>a, b, c - podstaw trzy liczby, które chcesz sprawdzić, czy tworzą trójkę pitagorejską.</li>
-            </ul>
-
+            
             <p>
-                albo wpisujemy przykładowe wartości do zmiennych i nazwę funkcji:
+                <ol>Aletrnatywnie można wpisać przykładowe wartości do zmiennych i nazwę funkcji:</ol>
             </p>
 
             </ol>
             <pre><strong><code>const a = 3; const b = 4; const c = 5; Zad_01(a, b, c)</code></strong></pre>
 
             <p>
-                Wynik działania funkcji zostanie wyświetlony w konsoli.
+                <ol>Wynik działania funkcji zostanie wyświetlony w konsoli.</ol>
             </p>
         </li>
         <hr>
@@ -118,8 +119,7 @@
 
             <p>
                 <ol>Upewnij się, że wartość <code>n</code> jest zdefiniowana przed wywołaniem funkcji. Na przykład,
-                    jeśli
-                    chcesz wywołać funkcję dla ciągu Fibonacciego o długości 10, wpisz: </ol>
+                    jeśli chcesz wywołać funkcję dla ciągu Fibonacciego o długości 10, wpisz: </ol>
                 <pre><strong><code>Zad_04(10)</code></strong></pre>
             </p>
             <hr>
@@ -140,10 +140,11 @@
 
             <pre><strong><code>Zad_05(height)</code></strong></pre>
 
-            <p>Upewnij się, że wartość <code>height</code> jest zdefiniowana przed wywołaniem funkcji. Na przykład,
-                jeśli chcesz narysować choinkę o wysokości 6, wpisz:</p>
-
-            <pre><strong><code>Zad_05(6)</code></strong></pre>
+            <p>
+                <ol>Upewnij się, że wartość <code>height</code> jest zdefiniowana przed wywołaniem funkcji. Na przykład,
+                    jeśli chcesz narysować choinkę o wysokości 6, wpisz:</ol>
+                <pre><strong><code>Zad_05(6)</code></strong></pre>
+            </p>
             <hr>
         </li>
 
@@ -151,18 +152,32 @@
             <h3>Zad_06</h3>
             <p>Napisz funkcję rysującą „choinkę nocą” o podanej wysokości
                 (szerokość jest tu nieco większa niż wysokość).</p>
+
+            <p>Aby wywołać funkcję <code>Zad_06</code> z okna konsoli przeglądarki, wykonaj następujące kroki:</p>
+
+            <ol>
+                <li>Otwórz konsolę przeglądarki, naciskając klawisze <code>Ctrl + Shift + J</code> w systemie Windows
+                    lub <code>Cmd + Option + J</code> w systemie macOS.</li>
+                <li>Wpisz poniższe polecenie w bloku kodu:</li>
+            </ol>
+
+            <pre><strong><code>Zad_06(height)</code></strong></pre>
+
+            <p>
+                <ol>Upewnij się, że wartość <code>height</code> jest zdefiniowana przed wywołaniem funkcji. Na przykład,
+                    jeśli chcesz narysować choinkę o wysokości 6, wpisz:</ol>
+                <pre><strong><code>Zad_06(6)</code></strong></pre>
+            </p>
+            <hr>
         </li>
-        <hr>
 
         <li>
             <h3>Zad_07</h3>
-            <p>Napisz funkcję liczącą pole wybranej figury (prostokąt,
-                trapez, równoległobok, trójkąt) z wykorzystaniem instrukcji
-                switch. Każda figura powinna mieć osobną funkcję do liczenia
-                pola.</p>
+            <p>Napisz funkcję liczącą pole wybranej figury (prostokąt,trapez, równoległobok, trójkąt)
+                z wykorzystaniem instrukcji switch. Każda figura powinna mieć osobną funkcję do liczenia pola.</p>
 
-            <p>Aby wywołać funkcję <code>Zad_07(shape, ...args)</code> z okna konsoli przeglądarki, wykonaj
-                następujące kroki:</p>
+            <p>Aby wywołać funkcję <code>Zad_07(shape, ...args)</code> z okna konsoli przeglądarki, wykonaj następujące
+                kroki:</p>
 
             <ol>
                 <li>Otwórz konsolę przeglądarki, naciskając klawisze <code>Ctrl + Shift + J</code> w systemie Windows
@@ -192,8 +207,6 @@
             <pre><strong><code>Zad_07('triangle', 5, 10)</code></strong></pre>
 
             <hr>
-        </li>
-
         </li>
 
         <li>
@@ -240,15 +253,56 @@
             <h3>Zad_09</h3>
             <p>Napisz funkcję wypisującą w konsoli trójkąt Pascala o
                 wysokości podanej jako parametr.</p>
-        </li>
+
+            <p>Aby wywołać funkcję <code>Zad_09(height)</code> z okna konsoli przeglądarki, wykonaj następujące kroki:
+            </p>
+
+            <ol>
+                <li>Otwórz konsolę przeglądarki, naciskając klawisze <code>Ctrl + Shift + J</code> w systemie Windows
+                    lub <code>Cmd + Option + J</code> w systemie macOS.</li>
+                <li>Wpisz poniższe polecenie w bloku kodu:</li>
+            </ol>
+
+            <pre><strong><code>Zad_09(height)</code></strong></pre>
+
+            <p>
+                <ol>Upewnij się, że wartość <code>height</code> jest zdefiniowana przed wywołaniem funkcji. Na przykład,
+                jeśli chcesz utworzyć trójkąt Pascala o wysokości 6, wpisz:</ol>
+            </p>
+
+            <pre><strong><code>Zad_09(6)</code></strong></pre>
+            <hr>
 
         <li>
             <h3>Zad_10</h3>
-            <p>Napisz funkcję cenzurującą zdanie. Funkcja ma otrzymać 2
-                parametry: tablicę niedozwolonych słów oraz zdanie do
-                ocenzurowania. Każde niedozwolone słowo ma zostać zastąpione
-                znakiem *.</p>
-        </li>
+            <p>Napisz funkcję cenzurującą zdanie, która zastępuje niedozwolone słowa w zdaniu gwiazdkami (*).</p>
+            <p>Funkcja ma otrzymać 2 parametry: tablicę niedozwolonych słów oraz zdanie do ocenzurowania. </p>
+
+            <p>Funkcja przyjmuje dwa parametry: tablicę niedozwolone_slowa i zdanie. Każde słowo z tablicy
+                niedozwolone_slowa zostanie zastąpione znakiem * w zdaniu.</p>
+
+            <p>Aby wywołać funkcję <code>Zad_10</code> z okna konsoli przeglądarki, wykonaj następujące kroki:</p>
+
+            <ol>
+                <li>Otwórz konsolę przeglądarki, naciskając klawisze <code>Ctrl + Shift + J</code> w systemie Windows
+                    lub <code>Cmd + Option + J</code> w systemie macOS.</li>
+                <li>Wpisz poniższe polecenie w bloku kodu:</li>
+            </ol>
+
+            <pre><strong><code>let niedozwolone_slowa = ["Ala", "kot"];</code></strong></pre>
+            <pre><strong><code>let zdanie = "Ala ma kota i psa";</code></strong></pre>
+            <pre><strong><code>console.log(Zad_10(niedozwolone_slowa, zdanie));</code></strong></pre>
+
+            <p>
+                <ol>Upewnij się, że wartości <code>niedozwolone_slowa</code> i <code>zdanie</code> są zdefiniowane przed
+                    wywołaniem funkcji.</ol>
+            </p>
+
+            <p>Wynik działania funkcji dla powyższego przykładu to:</p>
+
+            <pre><strong><code>* ma *a i psa</code></strong></pre>
+            <hr>
+            
 
     </ul>
 

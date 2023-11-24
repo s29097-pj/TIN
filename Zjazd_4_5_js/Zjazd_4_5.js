@@ -60,7 +60,38 @@ function Zad_05(height) {
   console.log(tree);
 }
 
-//
+/* Napisz funkcję rysującą „choinkę nocą” o podanej wysokości (szerokość jest tu nieco większa niż wysokość).
+  > choinkaNoca(6);
+************
+*****  *****
+****    ****
+***      ***
+**        **
+*          * */
+function Zad_06(height) {
+  if (height == undefined) {
+    console.log("Brak argumentu");
+    return;
+  }
+  
+  let result = "";
+  
+  for (let i = height; i > 0; i--) {
+    for (let j = 0; j < i; j++) {
+      result += "*";
+    }
+    for (let k = 0; k < 2 * (height - i); k++) {
+      result += " ";
+    }
+    for (let j = 0; j < i; j++) {
+      result += "*";
+    }
+    result += "\n";
+  }
+  
+  console.log(result);
+}
+  
 
 // Funkcja licząca pole wybranej figury 
 // (prostokąt, trapez, równoległobok, trójkąt) z wykorzystaniem instrukcji switch.
@@ -107,3 +138,38 @@ const Zad_08 = (shape, ...args) => {
   };
   return areaFunctions[shape];
 };
+
+// Funkcja wypisująca w konsoli trójkąt Pascala o wysokości podanej jako parametr.
+function Zad_09(height) {
+  let triangle = [];
+  for (let i = 0; i < height; i++) {
+    triangle[i] = [];
+    for (let j = 0; j <= i; j++) {
+      if (j === 0 || j === i) {
+        triangle[i][j] = 1;
+      } else {
+        triangle[i][j] = triangle[i - 1][j - 1] + triangle[i - 1][j];
+      }
+    }
+  }
+  for (let i = 0; i < height; i++) {
+    let row = "";
+    for (let j = 0; j < height - i - 1; j++) {
+      row += "  ";
+    }
+    for (let k = 0; k <= i; k++) {
+      row += `${triangle[i][k]}`.padStart(6, " ");
+    }
+    console.log(row);
+  }
+}
+
+// Funkcja cenzurująca słowa
+function Zad_10(niedozwolone_slowa, zdanie) {
+  let cenzura = "";
+  for (let i = 0; i < niedozwolone_slowa.length; i++) {
+    let regex = new RegExp(niedozwolone_slowa[i], "gi");
+    zdanie = zdanie.replace(regex, "*".repeat(niedozwolone_slowa[i].length));
+  }
+  return zdanie;
+}
