@@ -136,8 +136,17 @@ const Zad_08 = (shape, ...args) => {
     parallelogram: (base, height) => base * height,
     triangle: (base, height) => (base * height) / 2,
   };
-  return areaFunctions[shape];
+
+  const selectedFunction = areaFunctions[shape];
+  
+  if (selectedFunction) {
+    return selectedFunction(...args);
+  } else {
+    console.error("Unsupported shape: " + shape);
+    return null; // or throw an error
+  }
 };
+
 
 // Funkcja wypisująca w konsoli trójkąt Pascala o wysokości podanej jako parametr.
 function Zad_09(height) {
