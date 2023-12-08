@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIN Zad 11-12</title>
+    <script defer src="Zjazd_5_Zad_11.js"></script>
+    <script defer src="Zjazd_5_Zad_12.js"></script>
+</head>
+
+<body>
+
+    <h1>Technologie Internetu</h1>
+    <h2>Zadania JavaScript</h2>
+    <br>
+
+    <h2>Część B</h2>
+    <ul>
+            <h2><u>Zad_11</u></h2>
+            <p>Dany jest Obiekt:</p> 
+                <pre><code>auto{rok, przebieg, cena_wyjsciowa, cena_koncowa}.</code></pre></p>
+        <hr>
+
+        <p>Aby wywołać metodę z okna konsoli przeglądarki, wykonaj następujące kroki:
+        </p>
+        <ol>
+            <li>Otwórz konsolę przeglądarki, naciskając klawisze <code>Ctrl + Shift + J</code> w systemie Windows
+                lub <code>Cmd + Option + J</code> w systemie macOS.</li>
+            <li>Wpisz polecenie w bloku kodu.</li>
+        </ol>
+        
+        <hr>
+        <li>
+            <h3>Zad_11_1</h3> 
+            <p>Napisz następujące metody w obiekcie: </p>
+                <ol>a) Metoda, która powiększa cenę wyjściową o 1000.</ol>
+                <p>Wywołanie metody a)
+                    <pre><strong><code>auto.Zad_11_1_a();</code></strong></pre></p><br>
+                <ol>b) Metoda, która obniża cenę końcową o 1000 za każdy rok wieku
+                    auta (względem ceny wyjściowej).</ol>
+                <p>Wywołanie metody b)
+                    <pre><strong><code>auto.Zad_11_1_b();</code></strong></pre></p><br> 
+                <ol>c) Metoda, która obniża cenę końcową o 10000 za każde 
+                    100000km przebiegu auta.</ol>
+                <p>Wywołanie metody c)
+                    <pre><strong><code>auto.Zad_11_1_c();</code></strong></pre></p><br>
+                <p>Wywołanie metody c) z nowymi danymi
+                    <pre><strong><code>auto.Zad_11_1_c(2024, 150000, 50000, 0);</code></strong></pre></p><br>
+                <p>Wywołanie metody c) z częściowymi danymi
+                    <pre><strong><code>auto.Zad_11_1_c(2024, null, 50000, null);</code></strong></pre></p><br>
+                <ol>d) Metoda, która dopisuje do auta podany przebieg i rok 
+                    (automatycznie przeliczając cenę wg powyższych funkcji).</ol>
+                <p>Wywołanie metody d) z nowym przebiegiem i rokiem
+                    <pre><strong><code>auto.Zad_11_1_d(400000, 2022);</code></strong></pre></p><br>
+        </li>
+        <hr>
+
+        <li>
+            <h3>Zad_11_2</h3>
+            <p>Stwórz tablicę obiektów typu auto oraz funkcje do niej:</p>
+                <ol>e) Funkcja, która dopisze auto do tablicy samochodow, jesli jego
+                    cena jest wieksza niz 10000.</ol>
+                <ol>f) Funkcja, ktora dla wszystkich aut z tablicy zwieksza rok o 1.</ol>
+        </li>
+
+        <br>
+        <hr>
+            <h2><u>Zad_12</u></h2>
+            <p>Student i Ocena: klasy w ECMA6.</p>
+        <hr>
+        <li>    
+            <h3>Zad_12_1</h3>
+            <p>Stwórz klasę Ocena z konstruktorem. Ma mieć 2 pola:</p>
+                <ol>- przedmiot – nazwa przedmiotu,</ol>
+                <ol>- pole na średnią ocen,</ol>
+                <ol>- konstruktor (parametry, imię i nazwisko),</ol>
+                <ol>- metodę hello, zwracającą komunikat powitalny z imieniem, 
+                    nazwiskiem i aktualną średnią ocen.</ol>
+                <pre><code>> let s = new Student(‘Jan’, ‘Kowalski’);</code></pre>
+                <pre><code>> console.log(s.hello());</code></pre>
+                <code>Witaj Jan Kowalski, Twoja średnia ocen to: 0.</code>
+        </li>
+        <hr>
+        
+        <li>
+            <h3>Zad_12_2</h3>
+            <p>Stwórz klasę Student, zawierającą:</p>
+                <ol>- tablicę ocen,</ol>
+                <ol>- pole na średnią ocen,</ol>
+                <ol>- konstruktor (parametry, imię i nazwisko),</ol>
+                <ol>- metodę hello, zwracającą komunikat powitalny z imieniem, 
+                    nazwiskiem i aktualną średnią ocen.</ol>
+        </li>
+        <hr>
+        
+        <li>
+            <h3>Zad_12_3</h3>
+            <p>Do klasy Student dodaj setter oceny(x).</p>
+                <ol>Jeśli x jest 
+                    obiektem klasy Ocena, ma zostać dopisany do tablicy ocen. 
+                    Równocześnie ma zostać przeliczona średnia ocen</ol>
+        </li>
+        <hr>
+        
+        <li>
+            <h3>Zad_12_4</h3>
+            <p>Do klasy Student dodaj getter oceny().</p>
+                <ol>Powinien zwrócić 
+                    aktualne oceny studenta, dodane przy pomocy settera, w 
+                    komunikacie tekstowym, w formacie jak powyżej.</ol>
+
+                <pre><code>> console.log(s.oceny);</code></pre>
+                <code>Przedmiot: WPR - ocena 4. Przedmiot: TIN - ocena 3. Przedmiot: 
+                    POJ - ocena 2.</code>
+        </li>
+        <hr>
+    </ul>
+    
+</body>
+
+</html>
