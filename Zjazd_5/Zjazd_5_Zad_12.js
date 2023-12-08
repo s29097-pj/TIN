@@ -52,12 +52,12 @@ class Student {
 }
 
 // Przykładowe użycie
-let ocena1 = new Ocena("Systemy Operacyjne", 4);
-let ocena2 = new Ocena("TIN", 5);
-let s = new Student("Jan", "Kowalski");
+let ocena1 = new Ocena("RBD", 4);
+let ocena2 = new Ocena("MAD", 4.5);
+let student1 = new Student("Jan", "Kowalski");
 
-s.ocena = ocena1;
-s.ocena = ocena2;
-s.hello();
+student1.ocena = ocena1;
+student1.ocena = ocena2;
+student1.hello();
 
-console.log(s.oceny);
+console.log(student1.oceny);
