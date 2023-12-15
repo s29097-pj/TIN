@@ -1,0 +1,190 @@
+/* Stylizacja nagłówków */
+/* -------------------- */
+.red-text {
+    color: red;
+}
+
+.blue-text {
+    color: blue;
+}
+
+.green-text {
+    color: green;
+}
+
+/* Zad_01 - Stylizacja divów */
+/* ------------------------- */
+
+#myDivContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Odstęp między boxami - Zad_01 */
+}
+
+/* Stylizacja divów - Zad_01 */
+.myDiv {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+}
+
+/* Przyciski do boxów - Zad_01 */
+#buttonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Odstęp między przyciskami wewnątrz kontenera - Zad_01 */
+}
+
+/* Przyciski dla Zad_01 */
+#buttonContainer button {
+    height: 40px; /* Dostosuj wysokość do własnych preferencji - Zad_01 */
+    margin: 10px; /* Ustawienie marginesu dla przycisków takie samo jak dla boxów - Zad_01 */
+}
+
+/* Zad_02 Kalkulator */
+/* ----------------- */
+
+/* Kalkulator - główny kontener - Zad_02 */
+#calculator {
+    width: max-content;
+    background-color: rgba(54, 50, 44, 0.793);
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 0; /* Zmiana marginesu na 0 dla początku kalkulatora od lewej strony */
+}
+
+/* Wynik kalkulatora - Zad_02 */
+#wynik {
+    background-color: rgb(94, 223, 163);
+    text-align: end;
+    font-size: 36px;
+    border: 2px solid #104526;
+    border-radius: 5px;
+    padding: 0 10px; /* Dodaj odstęp od krawędzi */
+    font-family: 'Lucida Console', monospace;
+    width: 95%;
+}
+
+/* Przyciski kalkulatora - Zad_02 */
+#calculatorButtons button {
+    margin-top: 6px;
+    width: 100px;
+}
+
+/* Przycisk "Oblicz" kalkulatora - Zad_02 */
+.calcbuttom {
+    width: 80px;
+    height: 60px;
+    background-color: rgb(44, 58, 58);
+    color: white; /* Dodaj biały kolor tekstu */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+/* Formularz kalkulatora - Okno obliczeń - Zad_02 */
+fieldset {
+    background-color: rgb(85, 237, 237);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 95%;
+}
+
+/* Kolumny formularza kalkulatora - Zad_02 */
+.column {
+    display: flex;
+    flex-direction: column;
+    margin: 6px;
+}
+
+/* Pole numeryczne w formularzu - Zad_02 */
+input[type="number"] {
+    width: 100px;
+    padding: 6px;
+    text-align: center;
+}
+
+/* Pole wyboru operacji w formularzu - Zad_02 */
+#select {
+    width: 100px;
+    text-align: center;
+    height: 30px;
+}
+
+/* Pole wyboru operacji - dodawanie, odejmowanie, mnożenie, dzielenie - Zad_02 */
+.selectOperation {
+    background-color: rgba(195, 244, 227, 0.836);
+    width: 100px;
+    text-align: center;
+    height: 30px;
+    font-size: 20px;
+}
+
+/* RWD dla mniejszych ekranów */
+@media only screen and (max-width: 600px) {
+    #calculator {
+        width: 100%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    #result-box {
+        width: 95%; /* Szerokość #result-box */
+        margin-bottom: 10px;
+    }
+
+    fieldset {
+        flex-direction: column; /* Zmiana na układ kolumnowy */
+        align-items: stretch; /* Rozciągnięcie elementów na osi X */
+        width: 90%; /* Szerokość dla fieldset */
+        margin: 0; /* Usunięcie marginesu dla fieldset */
+        border: 1px;
+    }
+
+    .column {
+        margin: 6px 0; /* Drobne dostosowanie marginesu między kolumnami */
+    }
+
+    #calculatorButtons button {
+        width: 100%; /* Szerokość dla przycisków na mniejszych ekranach */
+    }
+}
+
+/* Dodatkowe style dla tabeli - Zad_03 */
+/* ----------------------------------- */
+
+/* Stylizacja nagłówka tabeli - Zad_03 */
+thead {
+    color: #000000; /* Kolor tekstu w nagłówku */
+}
+
+/* Stylizacja belki górnej wiersza - Zad_03 */
+thead tr:first-child {
+    background-color: #3498db; /* Kolor belki górnej w nagłówku */
+    color: rgb(255, 255, 255);
+}
+
+/* Stylizacja komórek w nagłówku - Zad_03 */
+th {
+    padding: 10px;
+}
+
+/* Stylizacja komórek w ciele tabeli - Zad_03*/
+td {
+    padding: 8px;
+    border: 1px solid #ddd; /* Dodanie obramowania komórek */
+}
+
+/* Zmiana koloru poprzez najechanie myszą na wiersz - Zad_03 */
+tr:hover {
+    background-color: #e3e2e2;
+}

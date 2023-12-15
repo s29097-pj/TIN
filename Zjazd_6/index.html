@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIN Zjazd 6 - Zadania 1-3</title>
+    <link id="style_dom" rel="stylesheet" href="style_dom_6.css">
+    <script defer src="script_dom_6.js"></script>
+</head>
+
+<body>
+
+    <h1 class="green-text">Technologie Internetu</h1>
+    <br>
+    <h2 class="blue-text">Zadania JavaScript</h2>
+    <h2 class="blue-text">Ćwiczenia na modyfikację DOM</h2>
+    <br>
+    <h2 class="red-text">Zadania 1-3</h2>
+    <br>
+
+    <ul>
+        <hr>
+        <li>
+            <h2>Prosta modyfikacja DOM</h2>
+            <h3>Zad_01</h3>
+            <p>Prosta modyfikacja DOM. Stwórz 4 divy w HTML oraz 4 przyciski. Do przycisków dodaj następujące działanie:
+            </p>
+            <p>- przycisk 1 - doda kolejny div do 4 istniejących divów</p>
+            <p>- przycisk 2 - usunie pierwszy div (kolejne naciśnięcie usunie kolejny div i tak dalej)</p>
+            <p>- przycisk 3 - zmieni kolor tła diva numer 3</p>
+            <p>- przycisk 4 - wpisze tekst „nowy tekst” do wszystkich divów.</p>
+            <br>
+
+            <div id="myDivContainer">
+                <div class="myDiv">Div 1</div>
+                <div class="myDiv">Div 2</div>
+                <div class="myDiv" id="divToChangeColor">Div 3</div>
+                <div class="myDiv">Div 4</div>
+            </div>
+
+            <!-- Przyciski -->
+            <div id="buttonContainer">
+                <button onclick="addNewDiv()">Dodaj div</button>
+                <button onclick="removeFirstDiv()">Usuń pierwszy div</button>
+                <button onclick="changeColor()">Zmień kolor diva 3</button>
+                <button onclick="changeText()">Wpisz tekst</button>
+            </div>
+
+        </li>
+
+        <hr>
+    </ul>
+
+    <ul>
+        <li>
+            <h2>Kalkulator</h2>
+            <h3>Zad_02</h3>
+            <p>Stwórz prosty kalkulator z wykorzystaniem HTML, CSS, JS. Powinien zawierać:</p>
+            <p>- dwa inputy na wpisanie liczb</p>
+            <p>- wybór działania z listy (dodawanie, odejmowanie, mnożenie, dzielenie) i przycisk uruchamiający liczenie
+            </p>
+            <p>- styl CSS na wzór poniższego obrazka</p>
+            <p>- kod JavaScript przeprowadzający obliczenie i wyświetlający wynik w HTML</p>
+            <p>- obsługę dzielenia przez zero: komunikat o błędzie</p>
+
+            <div id="calculator">
+                <!-- Wynik -->
+                <div id="result-box">
+                    <label for="wynik">Wynik:</label>
+                    <input type="text" id="wynik" name="wynik" readonly />
+                </div>
+
+                <!-- Miejsce na liczby i działanie -->
+                <fieldset>
+                    <div class="column">
+                        <label for="liczba1">Pierwsza liczba:</label>
+                        <input type="number" id="liczba1" name="liczba1" />
+                    </div>
+
+                    <div class="column">
+                        <label for="dzialanie">Działanie:</label>
+                        <select id="dzialanie" class="selectOperation">
+                            <option value="dodawanie">+</option>
+                            <option value="odejmowanie">-</option>
+                            <option value="mnozenie">*</option>
+                            <option value="dzielenie">/</option>
+                        </select>
+                    </div>
+
+                    <div class="column">
+                        <label for="liczba2">Druga liczba:</label>
+                        <input type="number" id="liczba2" name="liczba2" />
+                    </div>
+
+                    <button type="calc_button" id="btn_sub" class="calcbuttom">Oblicz</button>
+                </fieldset>
+            </div>
+        </li>
+        <hr>
+    </ul>
+
+    <ul>
+        <li>
+            <h2>Tabela Samochodów</h2>
+            <h3>Zad_03</h3>
+            <p>Stwórz tablicę obiektów typu auto{rok, przebieg, cena_wyjsciowa, cena_koncowa}.</p>
+            <p>Przy pomocy JS zbuduj element DOM</p>
+            <p>- tabelkę zawierającą dane z tych obiektów. Umieść tabelkę na stronie przy pomocy JS.</p>
+
+            <!-- Zadanie 03 - tabela samochodów -->
+            <div id="tabela-container"></div>
+
+            <hr>
+        </li>
+    </ul>
+</body>
+
+</html>
