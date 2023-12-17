@@ -34,6 +34,13 @@ body {
   box-shadow: 0 1.5em 85px 0 rgba(0, 0, 0, 0.2);
 }
 
+/* Media Queries akordeonu dla mniejszych ekranów */
+@media only screen and (max-width: 768px) {
+  .accordionWrapper {
+    width: 90%; /* Szerokość */
+  }
+}
+
 /* Zawartość akordeonu */
 .accordionContent {
   padding: 30px;
@@ -128,6 +135,15 @@ body {
   padding: 10px;
   position: relative; /* Dodane, aby umożliwić zastosowanie przesunięcia */
   left: -5px; /* Przesunięcie w lewo */
+}
+
+/* Media Queries stopki dla mniejszych ekranów */
+@media only screen and (max-width: 768px) {
+  .footer {
+    width: 87%; /* Szerokość */
+    margin: 10px auto; /* Margines */
+    left: -7px;
+  }
 }
 
 /* Style dla linków w stopce */
