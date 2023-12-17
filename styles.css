@@ -51,9 +51,16 @@ body {
 }
 
 /* Media Queries dla mniejszych ekranów */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .accordionContent {
-    width: 95%; /* Szerokość */
+    padding: 15px; /* Wartość paddingu dla mniejszych ekranów */
+  }
+}
+
+/* Media Queries dla mniejszych ekranów */
+@media only screen and (max-width: 600px) {
+  .accordionItem {
+    margin-top: 10px; /* Wartość marginesu dla mniejszych ekranów */
   }
 }
 
@@ -140,23 +147,23 @@ body {
   box-sizing: border-box;
   margin: 20px auto; /* Zmieniony margines */
   padding: 10px;
-  position: relative; /* Dodane, aby umożliwić zastosowanie przesunięcia */
+  position: relative; /* Przesunięcie */
   left: -5px; /* Przesunięcie w lewo */
 }
 
 /* Media Queries stopki dla mniejszych ekranów */
 @media only screen and (max-width: 768px) {
   .footer {
-    width: 90%; /* Szerokość */
+    width: 93%; /* Szerokość */
     margin: 10px auto; /* Margines */
-    left: -10px;
+    left: -5px;
   }
 }
 
 /* Style dla linków w stopce */
 footer a {
   color: rgb(191, 236, 191);
-  text-decoration: none; /* Dodane, aby usunąć podkreślenie */
+  text-decoration: none; /* Usunięcie podkreślenia */
 }
 
 /* Style dla linków w stopce po najechaniu myszką */
