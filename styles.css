@@ -37,7 +37,7 @@ body {
 /* Media Queries akordeonu dla mniejszych ekranów */
 @media only screen and (max-width: 768px) {
   .accordionWrapper {
-    width: 90%; /* Szerokość */
+    width: 98%; /* Szerokość */
   }
 }
 
@@ -48,6 +48,13 @@ body {
   border-radius: 5px;
   box-sizing: border-box;
   overflow: hidden;
+}
+
+/* Media Queries dla mniejszych ekranów */
+@media only screen and (max-width: 768px) {
+  .accordionContent {
+    width: 95%; /* Szerokość */
+  }
 }
 
 .accordionItem {
@@ -140,9 +147,9 @@ body {
 /* Media Queries stopki dla mniejszych ekranów */
 @media only screen and (max-width: 768px) {
   .footer {
-    width: 87%; /* Szerokość */
+    width: 90%; /* Szerokość */
     margin: 10px auto; /* Margines */
-    left: -7px;
+    left: -10px;
   }
 }
 
