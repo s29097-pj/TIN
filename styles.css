@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(135deg, #93d3c3, #fcd980);
+}
+
+/* Nagłówek strony */
+.header {
+  text-align: center;
+  color: #446c39;
+  padding: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Dodany cień tekstu */
+}
+
+/* Nazwa strony w nagłówku */
+.nazwa_strony {
+  font-size: 32px; /* Rozmiar czcionki */
+  font-weight: bold; /* Pogrubienie tekstu */
+  text-decoration: underline; /* Podkreślenie tekstu */
+}
+
+/* Akordeon */
+.accordionWrapper {
+  width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 1.5em 85px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Zawartość akordeonu */
+.accordionContent {
+  padding: 30px;
+  background: #f2edc4;
+  border-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.accordionItem {
+  float: left;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Open-sans', Arial, sans-serif;
+}
+
+.accordionItemHeading {
+  cursor: pointer;
+  margin: 0px 0px 10px 0px;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: 400;
+  background: #167790;
+  color: #d0eac8;
+  width: 100%;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.accordionItemHeading .highlight {
+  font-weight: bold; /* Grubsza czcionka */
+  margin-right: 10px; /* Dodatkowy margines między "Zjazd_X" a "nazwa" */
+  color: rgb(229, 255, 0); /* Kolor tekstu dla "AJAX" */
+}
+
+/* + */
+.accordionItemHeading span {
+  float: right;
+  font-size: 25px;
+}
+
+/* Styl dla zamkniętego akordeonu */
+.close .accordionItemContent {
+  height: 0px;
+  transition: height 1s ease-out;
+  transform: scaleY(0);
+  float: left;
+  display: block;
+}
+
+/* Dodatkowy styl dla otwartego akordeonu */
+.open .accordionItemContent {
+  padding: 20px;
+  background-color: #f0f1f1;
+  border: 1px solid #ddd;
+  width: 100%;
+  margin: 0px 0px 10px 0px;
+  display: block;
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: transform 0.4s ease;
+  box-sizing: border-box;
+}
+
+.open .accordionItemHeading {
+  margin: 0px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background-color: #073e63;
+  color: #cdd7d8;
+}
+
+/* Przewijalna baza */
+.scrollable-base {
+  max-height: 600px;
+  overflow-y: scroll;
+  text-indent: 20px;
+}
+
+/* Stopka */
+.footer {
+  background-color: rgb(53, 91, 84);
+  color: white;
+  text-align: center;
+  width: 500px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 20px auto; /* Zmieniony margines */
+  padding: 10px;
+  position: relative; /* Dodane, aby umożliwić zastosowanie przesunięcia */
+  left: -5px; /* Przesunięcie w lewo */
+}
+
+/* Style dla linków w stopce */
+footer a {
+  color: rgb(191, 236, 191);
+  text-decoration: none; /* Dodane, aby usunąć podkreślenie */
+}
+
+/* Style dla linków w stopce po najechaniu myszką */
+footer a:hover {
+  color: yellow;
+}
