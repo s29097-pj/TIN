@@ -17,3 +17,13 @@ function zmien(o) {
         document.getElementById('style_3').disabled = true;
     }
 }
+
+// JavaScript dla obsługi kliknięć na link 1
+document.addEventListener('DOMContentLoaded', function() {
+    var link1 = document.querySelector('.nav1 > li');
+    link1.addEventListener('click', function() {
+        var subLinks = document.querySelector('.nav1 .sub-links');
+        subLinks.style.display = subLinks.style.display === 'block' ? 'none' : 'block';
+    });
+});
+

@@ -1,41 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 /* Nagłówek */
 .header {
     width: 100%;
     padding: 10px 0;
 }
 
+/* Długość przycisku wyboru styli */
+form select {
+  width: 180px;
+}
+
 /* Logo i nazwa strony */
 .logo_i_nazwa_strony {
-    position: relative;
-    height: 100px;
-    display: flex;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    max-width: 500px;
-    font-size: 48px;
-    z-index: 1;
+  position: relative;
+  height: 100px;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  max-width: 500px;
+  font-size: 48px;
+  z-index: 1;
 }
 
 /* Skalowanie obrazka logo */
-img {
-    object-fit: cover;
+.logo img {
+  object-fit: cover;
 }
 
 .logo {
-    width: 150px;
-    height: 150px;
-    background-image: url(grafika/tin_1.png);
+  width: 150px;
+  height: 150px;
+  background-image: url(grafika/tin_1.png);
+  margin-top: 10px;
 }
 
 .nazwa_strony {
-    text-align: center;
+  text-align: center;
 }
 
 /* Nazwa_strony skalowanie na małych ekranach */
-@media (max-width: 500px) {
+@media (max-width: 768px) {
     .logo_i_nazwa_strony {
-        max-width: 100%;
-        font-size: 24px;
+        max-width: 90%;
+        font-size: 30px;
+    }
+    .logo {
+        width: 95px;
+        height: 95px;
     }
 }
 
@@ -55,7 +67,7 @@ ul > li {
     width: 150px;
     margin-left: 1px;
     background-color: rgb(241, 241, 241);
-    position: relative; /* Dodane - ustawienie pozycji jako względnej */
+    position: relative; /* Ustawienie pozycji jako względnej */
 }
 
 ul > li:hover {
@@ -74,266 +86,242 @@ ul a {
 
 ul > li > ul {
     display: none;
-    position: absolute; /* Dodane - ustawienie pozycji jako absolutnej */
-    top: 100%; /* Dodane - przesunięcie menu rozwijanego pod linkiem nadrzędnym */
-    left: 0; /* Dodane - ustawienie odstępu od lewej krawędzi */
-    z-index: 1; /* Dodane - ustawienie indeksu z */
+    position: absolute; /* Ustawienie pozycji jako absolutnej */
+    top: 100%; /* Przesunięcie menu rozwijanego pod linkiem nadrzędnym */
+    left: 0; /* Ustawienie odstępu od lewej krawędzi */
+    z-index: 1; /* Ustawienie indeksu z */
 }
 
 ul > li:hover > ul {
     display: block;
 }
 
-/* Responsywnosc strony i dzielenie na box_1 i box_2 */
-body {
-    background-color: rgb(226, 226, 226);
-}
-
-.content_main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-}
-
-.content_main > div {
-    padding: 10px;
-}
-
-/* Responsywność strony i dzielenie na box_1 i box_2 */
-.base_1 {
-    background-color: gray;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: space-around;
-}
-
-.box_1, .box_2 {
-    width: 44%;
-    float: left;
-    border: 1px solid black;
-    padding: 10px;
-    display: inline;
-    margin: 20px; /* Dodane - marginesy od góry i od dołu */
-}
-
-.box_1 {
-    background-color: white;
-}
-
-.box_2 {
-    background-color: white;
-    float: left;
-}
-
-img {
-    position: relative;
-    width: 100%;
-}
-
-@media (max-width: 500px) {
-    .base_1 {
-        flex-direction: column; /* responsywność box_1 i box_2 w base_1 */
-    }
-}
-
-/* Tabelka */
-.table_data{
-    width: 100%;
-    text-align: center;
-    border-collapse: collapse;
-}
-
-/* Linie odgraniczające komórki */
-tr{
-    border-bottom: 1pt solid black;
-}
-
-/* Nazwa tabelki */
-.table_title {
-    font-size: 24px;
-}
-
-/* Formularz */
-.form_data {
-    width: 100%;
-    text-align: left;
-    background-color: #ccc;
-}
-
-/* Nazwa formularza */
-.form_title{
-    font-size: 24px;
-}
-
-/* Opisy */
-label {
-    display: block;
-}
-
-/* Pola do wpisywania i zaznaczania */
-input, select, textarea {
-    width: 90%;
-}
-
-/* Lista opcji */
-.opcje_lista {
-    display: flex;
-    flex-direction: row;
-
-    /* Ustaw szerokość elementów na 100% */
-    li {
+@media (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      
+      .container {
+        max-width: 1050px;
+        width: 90%;
+        margin: auto;
+      }
+      
+      .navbar {
         width: 100%;
-        margin-bottom: 10px;
-    }
-
-    /* Dodaj pole wyboru */
-    input {
-        width: 100%;
-    }
-}
-
-/* Nagłówek */
-.header {
-    width: 100%;
-    padding: 10px 0;
-}
-
-/* Logo i nazwa strony */
-.logo_i_nazwa_strony {
-    position: relative;
-    height: 100px;
-    display: flex;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    max-width: 500px;
-    font-size: 48px;
-    z-index: 1;
-}
-
-/* Skalowanie obrazka logo */
-img {
-    object-fit: cover;
-}
-
-.logo {
-    width: 100px;
-    height: 100px;
-    background-image: url(grafika/tin_1.png);
-}
-
-.nazwa_strony {
-    text-align: center;
-}
-
-/* Nazwa_strony skalowanie na małych ekranach */
-@media (max-width: 500px) {
-    .logo_i_nazwa_strony {
-        max-width: 100%;
-        font-size: 24px;
-    }
-}
-
-/* Menu rozwijane */
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    font-size: 18px;
-    height: 2em;
-    line-height: 2em;
-    text-align: center;
-}
-
-ul > li {
-    float: left;
-    width: 150px;
-    margin-left: 1px;
-    background-color: rgb(241, 241, 241);
-    position: relative; /* Dodane - ustawienie pozycji jako względnej */
-}
-
-ul > li:hover {
-    background-color: rgb(192, 192, 192);
-}
-
-ul > li > ul > li:hover {
-    background-color: rgb(192, 192, 192);
-}
-
-ul a {
-    display: block;
-    text-decoration: none;
-    padding: 0 5px;
-}
-
-ul > li > ul {
-    display: none;
-    position: absolute; /* Dodane - ustawienie pozycji jako absolutnej */
-    top: 100%; /* Dodane - przesunięcie menu rozwijanego pod linkiem nadrzędnym */
-    left: 0; /* Dodane - ustawienie odstępu od lewej krawędzi */
-    z-index: 1; /* Dodane - ustawienie indeksu z */
-}
-
-ul > li:hover > ul {
-    display: block;
-}
-
-/* Responsywnosc strony i dzielenie na box_1 i box_2 */
-body {
-    background-color: rgb(226, 226, 226);
-}
-
-.content_main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-}
-
-.content_main > div {
-    padding: 10px;
-}
-
-/* Responsywność strony i dzielenie na box_1 i box_2 */
-.base_1 {
-    background-color: gray;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: space-around;
-}
-
-.box_1, .box_2 {
-    width: 44%;
-    float: left;
-    border: 1px solid black;
-    padding: 10px;
-    display: inline;
-    margin: 20px; /* Dodane - marginesy od góry i od dołu */
-}
-
-.box_1 {
-    background-color: white;
-}
-
-.box_2 {
-    background-color: white;
-    float: left;
-}
-
-img {
-    position: relative;
-    width: 100%;
-}
-
-@media (max-width: 500px) {
-    .box_1, .box_2 {
-        width: 100%;
+        box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+      }
+      
+      .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 62px;
+      }
+      
+      .navbar .menu-items {
+        display: flex;
+      }
+      
+      .navbar .nav-container li {
+        list-style: none;
+      }
+      
+      .navbar .nav-container a {
+        text-decoration: none;
+        color: #0e2431;
+        font-weight: 500;
+        font-size: 1.2rem;
+        padding: 0.7rem;
+      }
+      
+      .navbar .nav-container a:hover{
+          font-weight: bolder;
+      }
+      
+      .nav-container {
         display: block;
-        float: none;
-        margin: 20px; /* Dodane - marginesy od góry i od dołu na małych ekranach */
+        position: relative;
+        height: 60px;
+      }
+      
+      .nav-container .checkbox {
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 32px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+      }
+      
+      .nav-container .hamburger-lines {
+        display: block;
+        height: 26px;
+        width: 32px;
+        position: absolute;
+        top: 17px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      
+      .nav-container .hamburger-lines .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #0e2431;
+      }
+      
+      .nav-container .hamburger-lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+      }
+      
+      .nav-container .hamburger-lines .line2 {
+        transition: transform 0.2s ease-in-out;
+      }
+      
+      .nav-container .hamburger-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+      }
+      
+      .navbar .menu-items {
+        padding-top: 120px;
+        background-color: rgba(27, 26, 26, 0.719);
+        height: 120vh;
+        width: 120%; /* Szerokość menu wysuwanego na małym ekranie */
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 50px;
+        transition: transform 0.5s ease-in-out;
+        text-align: center;
+      }
+      
+      .navbar .menu-items li {
+        margin-bottom: 1.2rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+      
+      .logo-2 {
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        font-size: 1.2rem;
+        color: #0e2431;
+      }
+      
+      .nav-container input[type="checkbox"]:checked ~ .menu-items {
+        transform: translateX(0);
+      }
+      
+      .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+        transform: rotate(45deg);
+      }
+      
+      .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+        transform: scaleY(0);
+      }
+      
+      .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+        transform: rotate(-45deg);
+      }
+      
+      .nav-container input[type="checkbox"]:checked ~ .logo{
+        display: none;
+      }
+      
+      /* Dodatkowy styl dla submenu */
+      .nav1 .sub-links {
+        position: absolute;
+        top: 0;
+        left: 100%; /* Przesunięcie submenu w prawo */
+        display: none;
+        background-color: rgb(241, 241, 241);
+        border-left: 1px solid #ccc; /* Linia oddzielająca submenu */
+        z-index: 2; /* Ustawiamy wyższy indeks z niż dla li */
+      }
+      
+      .nav1 > li.active .sub-links {
+        display: block;
+      }
+}
+
+/* Responsywnosc strony i dzielenie na box_1 i box_2 */
+body {
+    background-color: rgb(226, 226, 226);
+}
+
+.content_main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.content_main > div {
+    padding: 10px;
+}
+
+/* Responsywność strony i dzielenie na box_1 i box_2 */
+.base_1 {
+    background-color: gray;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box_1, .box_2 {
+    width: 50%;
+    float: left;
+    border: 1px solid black;
+    padding: 10px;
+    display: inline;
+    margin: 20px; /* Marginesy od góry i od dołu */
+}
+
+.box_1 {
+    background-color: white;
+}
+
+.box_2 {
+    background-color: white;
+    float: left;
+}
+
+img {
+    position: relative;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .base_1 {
+        flex-direction: column; /* Responsywność box_1 i box_2 w base_1 */
+        width: 100%;
+    }
+
+    .box_1 {
+     width: 90%; 
+    }
+
+    .box_2 {
+      width: 90%;
     }
 }
 
@@ -392,7 +380,6 @@ input, select, textarea {
         width: 100%;
     }
 }
-
 /* Stopka */
 .footer > .foot {
     position: relative;
@@ -409,7 +396,7 @@ input, select, textarea {
     height: 100%;
 }
 
-/* Dodaj style dla stopki w zależności od szerokości ekranu */
+/* Style dla stopki w zależności od szerokości ekranu */
 @media all and (max-width: 600px) {
     .footer > .foot {
         height: auto;
@@ -419,3 +406,4 @@ input, select, textarea {
         width: 100%;
     }
 }
+
