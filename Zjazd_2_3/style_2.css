@@ -369,7 +369,7 @@ display: none;
     z-index: 1;
     width: 90%;
     max-width: 60%; /* Szerokość okna z treścią */
-    max-height: 70%;
+    max-height: 80%;
     left: 33%;
     overflow-y: scroll;
     background-color: rgba(52, 142, 65, 0.682);
