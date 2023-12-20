@@ -16,13 +16,11 @@
     <h2 class="blue-text">Zadania JavaScript</h2>
     <h2 class="blue-text">Ćwiczenia na modyfikację DOM</h2>
     <br>
-    <h2 class="red-text">Zadania 1-3</h2>
-    <br>
 
     <ul>
         <hr>
         <li>
-            <h2>Prosta modyfikacja DOM</h2>
+            <h2 style="text-align:center">Prosta modyfikacja DOM</h2>
             <h3>Zad_01</h3>
             <p>Prosta modyfikacja DOM. Stwórz 4 divy w HTML oraz 4 przyciski. Do przycisków dodaj następujące działanie:
             </p>
@@ -54,7 +52,7 @@
 
     <ul>
         <li>
-            <h2>Kalkulator</h2>
+            <h2 style="text-align:center">Kalkulator</h2>
             <h3>Zad_02</h3>
             <p>Stwórz prosty kalkulator z wykorzystaniem HTML, CSS, JS. Powinien zawierać:</p>
             <p>- dwa inputy na wpisanie liczb</p>
@@ -102,7 +100,7 @@
 
     <ul>
         <li>
-            <h2>Tabela Samochodów</h2>
+            <h2 style="text-align:center">Tabela samochodów</h2>
             <h3>Zad_03</h3>
             <p>Stwórz tablicę obiektów typu auto{rok, przebieg, cena_wyjsciowa, cena_koncowa}.</p>
             <p>Przy pomocy JS zbuduj element DOM</p>
@@ -114,6 +112,117 @@
             <hr>
         </li>
     </ul>
+
+    <ul>
+        <li>
+            <h2 style="text-align:center">Menu typu "Hamburger"</h2>
+            <h3>Zad_04</h3>
+            <p>Do strony www z zajęć o CSS dodaj responsywność: 
+                menu główne na małych ekranach, zwinięte do
+                „hamburgera” (bez używania gotowych bibliotek).</p>
+
+            <!-- link do strony -->
+            <p style="text-align: center;"><a href="https://s29097-pj.github.io/TIN/Zjazd_2_3/index.html" target="_blank">
+                Hamburger - strona www</a></p>
+            <p style="text-align: center;"><a href="https://github.com/s29097-pj/TIN/tree/main/Zjazd_2_3" target="_blank">
+                Hamburger - repozytorium github</a></p>
+
+            <hr>
+        </li>
+    </ul>
+
+    <ul>
+        <li>
+            <h2 style="text-align:center">Akordeon</h2>
+            <h3>Zad_05</h3>
+            <p>Przy pomocy HTML, CSS, JS zbuduj akordeon</p>
+
+            <!-- link do strony -->
+            <p style="text-align: center;"><a href="https://s29097-pj.github.io/TIN/" target="_blank">
+                Akordeon - strona www</a></p>
+            <p style="text-align: center;"><a href="https://github.com/s29097-pj/TIN" target="_blank">
+                Akordeon - repozytorium github</a></p>
+
+            <hr>
+        </li>
+    </ul>
+
+    <ul>
+        <li>
+            <h2 style="text-align:center">Galeria Lightbox</h2>
+            <h3>Zad_06</h3>
+            <p>Przy pomocy HTML, CSS, JS zbuduj galerię zdjęć typu Lightbox</p>
+            <p>Bez używania gotowych bibliotek</p>
+
+            <div class="row">
+                <div class="column">
+                    <img src="grafika/Gdynia.jpg" style="width:100%" onclick="openModal();currentSlide(1)"
+                        class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="grafika/Gdansk.jpg" style="width:100%" onclick="openModal();currentSlide(2)"
+                        class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="grafika/Poznan.jpg" style="width:100%" onclick="openModal();currentSlide(3)"
+                        class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="grafika/Warszawa.jpg" style="width:100%" onclick="openModal();currentSlide(4)"
+                        class="hover-shadow cursor">
+                </div>
+            </div>
+        
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+        
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="grafika/Gdynia.jpg" style="width:100%">
+                    </div>
+        
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="grafika/Gdansk.jpg" style="width:100%">
+                    </div>
+        
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="grafika/Poznan.jpg" style="width:100%">
+                    </div>
+        
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="grafika/Warszawa.jpg" style="width:100%">
+                    </div>
+        
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+        
+                    <div class="column">
+                        <img class="demo cursor" src="grafika/Gdynia.jpg" style="width:100%" onclick="currentSlide(1)"
+                            alt="Gdynia">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="grafika/Gdansk.jpg" style="width:100%" onclick="currentSlide(2)"
+                            alt="Gdańsk">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="grafika/Poznan.jpg" style="width:100%" onclick="currentSlide(3)"
+                            alt="Poznań">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="grafika/Warszawa.jpg" style="width:100%" onclick="currentSlide(4)"
+                            alt="Warszawa">
+                    </div>
+                </div>
+            </div>
+
 </body>
 
 </html>
