@@ -425,12 +425,12 @@ body {
         max-width: 90%;
         margin: 2%;
         left: 2%;
-        top: 35%;
+        top: 37%;
         right: 2%;
     }
 
     .scrollable-base {
-        max-height: 375px; /* Wysokość */
+        max-height: 340px; /* Wysokość */
         overflow-y: scroll; /* Przywraca pionowy pasek przewijania tylko wtedy, gdy jest to potrzebne */
         text-indent: 20px; /* Wcięcie tekstu po lewej stronie */
     }
