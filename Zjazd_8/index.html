@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Galeria Zdjęć</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+
+<body>
+
+    <h1>Formularz wysyłający dane</h1>
+    <h2>mockup zapisu nowego zdjęcia do danego albumu</h2>
+
+    <form action="https://jsonplaceholder.typicode.com/photos" method="POST">
+        <label for="albumId">Album ID:</label>
+        <input type="text" id="albumId" name="albumId" required><br>
+
+        <label for="title">Tytuł:</label>
+        <input type="text" id="title" name="title" required><br>
+
+        <label for="url">URL:</label>
+        <input type="text" id="url" name="url" required><br>
+
+        <label for="thumbnailUrl">Miniaturka URL:</label>
+        <input type="text" id="thumbnailUrl" name="thumbnailUrl" required><br>
+
+        <button type="submit">Zapisz Zdjęcie</button>
+    </form>
+
+    <p>Oto przykładowe dane, które możesz wpisać w formularzu:</p>
+    <ul>
+        <li>Album ID: 1</li>
+        <li>Tytuł: Przykładowy tytuł</li>
+        <li>URL: https://picsum.photos/200/300</li>
+        <li>Miniaturka URL: https://picsum.photos/50/50</li>
+    </ul>
+    <p>Po wypełnieniu formularza i kliknięciu przycisku "Zapisz Zdjęcie", dane zostaną wysłane do API
+        jsonplaceholder.typicode.com/photos.</p>
+    <br>
+
+    <h1>Galeria Zdjęć</h1>
+    <div class="gallery"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
