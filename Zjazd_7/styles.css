@@ -1,0 +1,48 @@
+/* Resetowanie domyślnych stylów dla całej strony */
+body {
+    font-family: 'Arial', sans-serif; /* Wybór czcionki */
+    margin: 0; /* Usunięcie marginesu */
+    padding: 0; /* Usunięcie paddingu */
+    background-color: #cecaca; /* Kolor tła strony */
+    text-align: center; /* Wyśrodkowanie tekstu */
+}
+
+/* Kontener główny strony */
+.container {
+    max-width: 800px; /* Maksymalna szerokość kontenera */
+    margin: 20px auto; /* Marginesy na górze i dołu, auto do wyśrodkowania */
+    background-color: #fff; /* Kolor tła kontenera */
+    padding: 20px; /* Wewnętrzny padding kontenera */
+    border-radius: 8px; /* Zakrąglenie narożników */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.963); /* Cień */
+}
+
+/* Stylizacja tabeli */
+table {
+    width: 100%; /* Pełna szerokość tabeli */
+    border-collapse: collapse; /* Usunięcie odstępów między komórkami */
+    margin-top: 20px; /* Margines na górze tabeli */
+}
+
+table, th, td {
+    border: 1px solid #b2b1b1; /* Grubość i kolor obramowania */
+}
+
+th, td {
+    padding: 12px; /* Wewnętrzny padding komórek */
+    text-align: left; /* Wyrównanie tekstu do lewej */
+}
+
+th {
+    background-color: #f5f5f5; /* Kolor tła nagłówków kolumn */
+}
+
+/* Stylizacja rotatora z newsami */
+#newsRotator {
+    margin-top: 20px; /* Margines na górze rotatora */
+    padding: 10px; /* Wewnętrzny padding rotatora */
+    border: 1px solid #bbbbbb; /* Grubość i kolor obramowania */
+    border-radius: 4px; /* Zakrąglenie narożników */
+    overflow: hidden; /* Ukrycie elementów, które wykraczają poza kontener */
+    white-space: nowrap; /* Zawijanie tekstu w rotatorze */
+}
