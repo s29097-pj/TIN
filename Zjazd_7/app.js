@@ -73,6 +73,10 @@ $(document).ready(function() {
     // Cykliczne pobieranie danych co 10 sekund
     setInterval(fetchData, 10000);
 
+    // Set up Content-Security-Policy-Report-Only header
+    const cspHeader = 'Content-Security-Policy-Report-Only: default-src https:; report-uri /endpoint';
+    $('head').append(`<meta http-equiv="${cspHeader}">`);
+
     // Początkowe pobranie danych po załadowaniu strony
     fetchData();
 });
