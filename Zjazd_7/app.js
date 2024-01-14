@@ -29,25 +29,26 @@ $(document).ready(function() {
 
     // Funkcja do aktualizacji tabeli z danymi dotyczącymi kursów akcji
     function updateStockTable(stockData) {
-        // Sprawdzenie, czy dane się zmieniły
-        if (!lastStockData || !isEqual(lastStockData, stockData)) {
-            // Jeśli dane się zmieniły, zaktualizuj tabelę
-            lastStockData = stockData;
+        $.each(stockData, function(company, price) {
+            // Sprawdź, czy dana wartość kursu akcji się zmieniła
+            const lastPrice = lastStockData ? lastStockData[company] : null;
 
-            // Wyczyszczenie poprzednich danych w tabeli
-            $('#stockTable').empty();
+            if (lastPrice !== price) {
+                // Jeśli wartość się zmieniła, zaktualizuj tylko daną komórkę
+                $(`#stockTable #${company}`).text(price);
+            }
+        });
 
-            // Utworzenie nagłówków tabeli
-            const headers = '<tr><th>Firma</th><th>Kurs Akcji</th></tr>';
-            $('#stockTable').append(headers);
-
-            // Wypełnienie tabeli danymi dotyczącymi kursów akcji
-            $.each(stockData, function(company, price) {
-                const row = `<tr><td>${company}</td><td>${price}</td></tr>`;
-                $('#stockTable').append(row);
-            });
-        }
+        // Zapisz aktualne dane kursów akcji
+        lastStockData = { ...stockData };
     }
+
+    // Wypełnienie tabeli danymi dotyczącymi kursów akcji
+    $.each(stockData, function(company, price) {
+        const row = `<tr><td>${company}</td><td id="${company}">${price}</td></tr>`;
+        $('#stockTable').append(row);
+    });
+
 
     // Funkcja do aktualizacji rotatora z newsami
     function updateNewsRotator(news) {
