@@ -2,9 +2,6 @@ $(document).ready(function() {
     // Adres API, z którego pobierane są dane
     const apiUrl = 'http://szuflandia.pjwstk.edu.pl/~ppisarski/zad8/dane.php';
 
-    // Zmienna do przechowywania ostatnich danych dotyczących kursów akcji
-    let lastStockData = null;
-
     // Funkcja do pobierania danych z serwera
     function fetchData() {
         $.ajax({
@@ -20,6 +17,10 @@ $(document).ready(function() {
             error: function(xhr, status, error) {
                 // Obsługa błędów podczas pobierania danych
                 console.error('Błąd podczas pobierania danych:', error);
+
+                // Dostęp do xhr i status w przypadku błędu
+                console.log('XHR:', xhr);
+                console.log('Status:', status);
             }
         });
     }
